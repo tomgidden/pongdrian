@@ -1,3 +1,5 @@
+// Warning: this game was written by Claude Code, so it's probably rubbish.
+
 interface KeyConfig {
   up: string;
   down: string;

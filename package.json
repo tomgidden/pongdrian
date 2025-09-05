@@ -1,17 +1,20 @@
 {
   "name": "pongdriaan",
-  "module": "index.ts",
+  "author": {
+    "name": "Tom Gidden",
+    "email": "tom@gidden.net"
+  },
+
+  "module": "src/game.ts",
   "type": "module",
-  "private": true,
+
   "scripts": {
     "dev": "bun run dev.js",
-    "build": "bun build game.js --outdir public --target browser && cp src/index.html src/style.css public/",
+    "build": "bun build src/game.ts --outdir public --target browser && cp src/index.html src/style.css public/",
     "clean": "rm -rf public"
   },
+
   "devDependencies": {
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
   }
 }
