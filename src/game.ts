@@ -467,7 +467,7 @@ class Player {
   }
 }
 
-class Pongdriaan {
+class Pongdrian {
   private readonly canvas: HTMLCanvasElement;
   private readonly g: CanvasRenderingContext2D;
   private readonly score1_el: HTMLElement;
@@ -834,5 +834,5 @@ class Pongdriaan {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  new Pongdriaan(document);
+  new Pongdrian(document);
 });

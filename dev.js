@@ -31,7 +31,7 @@ const server = Bun.serve({
   },
 });
 
-console.log(`🎮 Pongdriaan dev server running at http://localhost:${server.port}`);
+console.log(`🎮 Pongdrian dev server running at http://localhost:${server.port}`);
 console.log(`📱 Open your browser and navigate to http://localhost:${server.port} to play!`);
 
 async function buildFiles() {
