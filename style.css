@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 8px solid #000;
+    background: #fff;
+}
+
+
+#gameCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #ffffff;
+}
+
+.game-ui {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    text-align: center;
+}
+
+.score {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.separator {
+    margin: 0 20px;
+}
+
+.controls {
+    font-size: 14px;
+    color: #333;
+}
+
+.controls p {
+    margin-bottom: 10px;
+}
+
+#startBtn {
+    background: #1e3a8a;
+    color: white;
+    border: 3px solid #000;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startBtn:hover {
+    background: #3b82f6;
+}
+
+#startBtn:active {
+    background: #1d4ed8;
+}
+
+.game-modes {
+    margin-bottom: 15px;
+}
+
+.mode-selection {
+    margin-bottom: 10px;
+}
+
+.mode-selection label {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mode-selection input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+}
+
+.difficulty-selection {
+    margin-bottom: 10px;
+}
+
+.difficulty-selection label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#difficultySelect {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
