@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "bun run dev.js",
-    "build": "bun build game.js --outdir public --target browser && cp index.html style.css public/",
-    "start": "bunx serve public",
+    "build": "bun build game.js --outdir public --target browser && cp src/index.html src/style.css public/",
     "clean": "rm -rf public"
   },
   "devDependencies": {
