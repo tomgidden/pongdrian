@@ -4,8 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run server.js",
-    "start": "bun run server.js"
+    "dev": "bun run dev.js",
+    "build": "bun build game.js --outdir public --target browser && cp index.html style.css public/",
+    "start": "bunx serve public",
+    "clean": "rm -rf public"
   },
   "devDependencies": {
     "@types/bun": "latest"
