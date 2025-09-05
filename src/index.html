@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongdriaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-ui">
+        <div class="score">
+            <div class="player-score">
+                <span id="score-player1">0</span>
+                <span id="difficulty-player1" class="difficulty-debug"></span>
+            </div>
+            <span class="separator">:</span>
+            <div class="player-score">
+                <span id="score-player2">0</span>
+                <span id="difficulty-player2" class="difficulty-debug"></span>
+            </div>
+        </div>
+        <div class="instructions">
+            <p id="instructions"></p>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+    </div>
+
+    <div class="credits">
+        <p id="credits">
+            Pongdriaan: Implementation by Claude Code, under the thumb of <a href="https://bsky.app/profile/gid.cx">Tom Gidden</a>; Original concept by <a href="https://bsky.app/profile/happytoast.co.uk/post/3ly362dc6v22u">HappyToast</a>.
+        </p>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+
+</html>

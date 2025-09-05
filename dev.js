@@ -8,9 +8,9 @@ await buildFiles();
 
 // Watch for changes
 console.log("👀 Watching for changes...");
-watch(".", { recursive: true }, async (eventType, filename) => {
-  if (filename && (filename.endsWith('.js') || filename.endsWith('.html') || filename.endsWith('.css'))) {
-    console.log(`🔄 File changed: ${filename}, rebuilding...`);
+watch("src", { recursive: true }, async (eventType, filename) => {
+  if (filename && (filename.endsWith('.ts') || filename.endsWith('.js') || filename.endsWith('.html') || filename.endsWith('.css'))) {
+    console.log(`🔄 File changed: src/${filename}, rebuilding...`);
     await buildFiles();
   }
 });
@@ -37,12 +37,12 @@ console.log(`📱 Open your browser and navigate to http://localhost:${server.po
 async function buildFiles() {
   // Build JS
   await Bun.build({
-    entrypoints: ["./game.js"],
+    entrypoints: ["./src/game.ts"],
     outdir: "./public",
     target: "browser",
   });
   
   // Copy static files
-  await Bun.write("public/index.html", Bun.file("index.html"));
-  await Bun.write("public/style.css", Bun.file("style.css"));
+  await Bun.write("public/index.html", Bun.file("src/index.html"));
+  await Bun.write("public/style.css", Bun.file("src/style.css"));
 }
